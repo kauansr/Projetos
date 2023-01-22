@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+
+{% block titulo %}YTdowloader | {% endblock titulo %}
+
+{% block conteudo %}
+
+    
+   
+        <div class='container-main'>
+  
+          <section class='section-main'>
+
+            <form action="/" method="post">
+<h1>
+    baixar uma video:
+    <input type="text" name='um_video' placeholder='Apenas link de um video' class='inputcustom'>
+    <button type="submit" class='btn'>Baixar</button>
+    <br>
+    <br>
+    baixar uma musica:
+    <input type="text" name='uma_musica' placeholder='Apenas link de uma musica' class='inputcustom'>
+    <button type="submit" class='btn'>Baixar</button>
+    <br>
+    <br>
+    playlist de musica:
+    <input type="text" name='playlist_musica' placeholder='Apenas link de uma playlist de musica' class='inputcustom'>
+    <button type="submit" class='btn'>Baixar</button>
+    <br>
+    <br>
+    playlist de video:
+    <input type="text" name='playlist_video' placeholder='Apenas link de uma playlist de video' class='inputcustom'>
+    <button type="submit" class='btn'>Baixar</button>
+</h1>
+
+
+</section>
+</form>
+
+        </div>
+   
+
+
+{% endblock conteudo %}
