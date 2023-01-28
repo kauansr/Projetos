@@ -16,7 +16,7 @@ def home():
                 baixa = musica.download(
                     output_path="C:/Users/ADM/Music")
                 base, ext = os.path.splitext(baixa)
-                novo_arquivo = base + '.mp4'
+                novo_arquivo = base + '.mp3'
                 os.rename(baixa, novo_arquivo)
                         
             except:
@@ -47,7 +47,7 @@ def home():
                     baixa = musica.download(
                         output_path="C:/Users/ADM/Music")
                     base, ext = os.path.splitext(baixa)
-                    novo_arquivo = base + '.mp4'
+                    novo_arquivo = base + '.mp3'
                     os.rename(baixa, novo_arquivo)
             
             except:
