@@ -10,7 +10,7 @@ print('''Digite sua opcao de dowload:
 0 - Para sair.
 ''')
 print()
-
+pasta = 'caminho dos arquivos'
 
 while True:
     try:
@@ -31,12 +31,12 @@ while True:
 
             print('Titulo:', yt.title)
             video = yt.streams.get_highest_resolution()
-            video.download(output_path="C:/Users/ADM/Downloads")
+            video.download(output_path=pasta)
             print('Download concluido!')
 
         elif op == 2:
             
-            url = input(str('Digite sua(s) urls: '))
+            url = input(str('Digite sua url: '))
 
             
            
@@ -46,7 +46,7 @@ while True:
             print('Titulo:', ys.title, 'Baixando...')
             musica = ys.streams.get_audio_only()
             baixa = musica.download(
-                output_path="C:/Users/ADM/Music")
+                output_path=pasta)
             base, ext = os.path.splitext(baixa)
             novo_arquivo = base + '.mp3'
             os.rename(baixa, novo_arquivo)
@@ -66,7 +66,7 @@ while True:
                 print('Titulo:', ys.title, 'Baixando...')
                 musica = ys.streams.get_audio_only()
                 baixa = musica.download(
-                    output_path="C:/Users/ADM/Music")
+                    output_path=pasta)
                 base, ext = os.path.splitext(baixa)
                 novo_arquivo = base + '.mp3'
                 os.rename(baixa, novo_arquivo)
@@ -83,7 +83,7 @@ while True:
                 print('Titulo:', ys.title, 'Baixando...')
                 video = ys.streams.get_highest_resolution()
                 baixa = video.download(
-                    output_path="C:/Users/ADM/Downloads")
+                    output_path=pasta)
                 print(ys.title, 'Download completo!')
     except ValueError:
         print('Apenas entre 1 e 4.')
