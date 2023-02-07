@@ -9,3 +9,6 @@
 
 3 - Um site feito em flask que baixa videos do Youtube seja, link do video ou musica ou playlist
 - Um youtube downloader que baixa pelo link do video ou playlist
+
+4 - Um Youtube Downloader que baixa videos do Youtube seja, link do video ou musica ou playlist
+- Um youtube downloader que baixa videos pelo CMD
